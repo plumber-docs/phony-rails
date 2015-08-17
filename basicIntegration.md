@@ -3,6 +3,8 @@
 
 From Docker image: plumber/plumber-rails
 
+Install the phony_rails gem.
+
 `echo "gem 'phony_rails'" >> Gemfile`
 
 `bundle install`
