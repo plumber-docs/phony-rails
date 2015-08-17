@@ -1,9 +1,7 @@
 
 # Installation
 
-From Dockerfile: rails:4.2.3
-
-`rails new plumberSampleApp`
+From Docker image: plumber/plumber-rails
 
 `echo "gem 'phony_rails'" >> Gemfile`
 
