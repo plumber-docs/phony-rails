@@ -5,7 +5,7 @@ From Docker image: plumber/plumber-rails
 
 Install the phony_rails gem.
 
-`echo "gem 'phony_rails'" >> Gemfile`
+{{run_on_command_line 'echo "gem \'phony_rails\'" >> Gemfile'}}
 
 `bundle install`
 
