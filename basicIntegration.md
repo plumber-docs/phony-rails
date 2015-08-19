@@ -6,8 +6,7 @@ From Docker image: plumber/plumber-rails
 Install the phony_rails gem.
 
 {{run_on_command_line 'echo "gem \'phony_rails\'" >> Gemfile'}}
-
-`bundle install`
+{{run_on_command_line 'bundle install'}}
 
 # Normalize a phone number
 
