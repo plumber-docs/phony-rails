@@ -9,12 +9,14 @@ examples:
         {{run_on_command_line 'bundle install'}}
 
   - name: Normalize a phone number
+    requires: ['Installation']
     steps:
       - > 
         {{run_in_rails "Phony.normalize('1 (703) 451-5115')"}}
     expected_result: 17034515115
 
   - name: Format a phone number
+    requires: ['Installation']
     steps:
       - >
        {{run_in_rails "Phony.format('41443643532')"}}
