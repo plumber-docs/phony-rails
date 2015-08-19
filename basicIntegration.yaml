@@ -1,24 +1,22 @@
 ---
 docker_image: plumber/plumber-rails
-Installation:
-  steps:
-    - >
-      {{add_to_bottom_of_file "gem 'phony_rails'" 'Gemfile'}}
-    - >
-      {{run_on_command_line 'bundle install'}}
+- Installation:
+    steps:
+      - >
+        {{add_to_bottom_of_file "gem 'phony_rails'" 'Gemfile'}}
+      - >
+        {{run_on_command_line 'bundle install'}}
 
-Normalize a phone number:
+- Normalize a phone number:
+    steps:
+      - > 
+        {{run_in_rails "Phony.normalize('1 (703) 451-5115')"}}
 
-  steps:
-    - > 
-      {{run_in_rails "Phony.normalize('1 (703) 451-5115')"}}
+    expected_result: 17034515115
 
-  expected_result: 17034515115
+- Format a phone number:
+    steps:
+      - >
+        {{run_in_rails "Phony.format('41443643532')"}}
 
-Format a phone number:
-  
-  steps:
-    - >
-      {{run_in_rails "Phony.format('41443643532')"}}
-
-  expected_result: +41 44 364 35 32
+    expected_result: +41 44 364 35 32
