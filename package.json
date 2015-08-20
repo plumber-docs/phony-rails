@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "plumber-test": "git://github.com/plumber-docs/plumber-test.git"
+  }
+}
