@@ -2,8 +2,8 @@
 machine:
   services:
     - docker
-    node: 
-      version: iojs-v1.3.0
+  node: 
+    version: iojs-v1.3.0
 
 dependencies:
   override:
