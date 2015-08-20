@@ -11,4 +11,4 @@ dependencies:
 
 test:
   override:
-    - node -e "require('plumbler-test').runTests('.')"
+    - node -e "require('plumber-test').runTests('.')"
