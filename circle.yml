@@ -7,7 +7,7 @@ machine:
 
 dependencies:
   override:
-    - npm install
+    - npm install git://github.com/plumber-docs/plumber-test.git
 
 test:
   override:
